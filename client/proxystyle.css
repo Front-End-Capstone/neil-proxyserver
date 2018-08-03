@@ -6,7 +6,8 @@ body{
   display: flex
 }
 #sidebar{
-  position: sticky;
+  position: relative;
+  /* position:sticky; */
   right:40px;
   /* float:right; */
   /* margin-right:200px; */

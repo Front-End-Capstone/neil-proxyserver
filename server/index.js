@@ -21,36 +21,37 @@ app.use(express.static(path.join(__dirname, '../client/')));
 
 // bundle requests
 
-app.get('/bundle.js/3000', (req, res)=>{
-  request('http://localhost:3000/bundle.js', (error, response, body)=>{
-    if(!error){
-      res.status(200).send(body)
-    }
-  })
-});
+// app.get('/bundle.js/3000', (req, res)=>{
+//   request('http://localhost:3000/bundle.js', (error, response, body)=>{
+//     if(!error){
+//       res.status(200).send(body)
+//     }
+//   })
+// });
 
-app.get('/bundle.js/3001', (req, res)=>{
-  request('http://localhost:3001/bundle.js', (error, response, body)=>{
-    if(!error){
-      res.status(200).send(body)
-    }
-  })
-});
+// app.get('/bundle.js/3001', (req, res)=>{
+//   request('http://localhost:3001/bundle.js', (error, response, body)=>{
+//     if(!error){
+//       res.status(200).send(body)
+//     }
+//   })
+// });
 
-app.get('/bundle.js/3002', (req, res)=>{
-  request('http://localhost:3002/bundle.js', (error, response, body)=>{
-    if(!error){
-      res.status(200).send(body)
-    }
-  })
-});
-app.get('/bundle.js/3004', (req, res)=>{
-  request('http://localhost:3004/bundle.js', (error, response, body)=>{
-    if(!error){
-      res.status(200).send(body)
-    }
-  })
-});
+// app.get('/bundle.js/3002', (req, res)=>{
+//   request('http://localhost:3002/bundle.js', (error, response, body)=>{
+//     if(!error){
+//       res.status(200).send(body)
+//     }
+//   })
+// });
+
+// app.get('/bundle.js/3004', (req, res)=>{
+//   request('http://localhost:3004/bundle.js', (error, response, body)=>{
+//     if(!error){
+//       res.status(200).send(body)
+//     }
+//   })
+// });
 
 // api reqs
 app.use('/sidebar/:experience', (req, res)=>{
